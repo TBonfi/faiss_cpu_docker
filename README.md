@@ -19,7 +19,13 @@ Docker image for Deepnote + fix for slow down + example with 1 million blobs
  
  
  ## Results and general impressions:
- 
+Metric | Faiss's Kmeans | Sklearn's KMeans
+------------ | ------------- | -------------
+CPU times | user 1min 6s,  total: 1min 7s | user 18min 6s, total: 20min 10s
+Adjusted Rand Score | 0.429 | 0.429
+Inertia | 449472.2 | 449244177.4
+
+
  1. It's truly faster running in the same hardware which is impressive, SKlearn's KMeans has reigned for long years and It's kinda cool see a newcomber. I'll be testing GPU soon!
  2. The installation could be painfull, I've spent more hours trying to run It in different setups than I can publicly say. It's different for Google Collaboratory, Sagemaker Notebook's instances and Deepnote.
  3. Without the referenced closed issue I wouldn't be able to run It properly, kudos to the community!
