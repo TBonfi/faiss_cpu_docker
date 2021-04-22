@@ -1,6 +1,3 @@
-# faiss_cpu_docker
-Facebook's Faiss CPU example with Dockerfile ready and tested for Deepnote so you don't have to try and fail like I did 😎
-
 # Faiss for CPU benchmark in Deepnote with Docker image
 
 ## Description:
